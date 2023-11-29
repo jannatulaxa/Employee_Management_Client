@@ -1,6 +1,4 @@
-import React from 'react';
 import HeadTittle from '../../Components/Shared/HeadTittle/HeadTittle';
-import App from '../../Routes/xmpl';
 
 const ContuctUs = () => {
     return (
@@ -23,7 +21,7 @@ const ContuctUs = () => {
 
             </div>
             </div>
-            <App/>
+
         </div>
     );
 };
