@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Employee Profiles",
+        "subtitle": "View and manage employee details",
+        "content": "Access and update information related to employee profiles, including contact details, position, and department."
+    },
+    {
+        "title": "Leave Management",
+        "subtitle": "Submit and track leave requests",
+        "content": "Learn how to submit and track leave requests for employees. Keep records of approved and pending leaves."
+    },
+    {
+        "title": "Performance Evaluation",
+        "subtitle": "Evaluate and review employee performance",
+        "content": "Understand the process of conducting performance evaluations for employees and providing constructive feedback."
+    },
+    {
+        "title": "Employee Benefits",
+        "subtitle": "Explore available benefits and perks",
+        "content": "Discover the range of benefits and perks offered to employees, including health insurance, retirement plans, and more."
+    }
+]
