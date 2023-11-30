@@ -8,6 +8,9 @@ import Dashboard from "../Page/Dashboard/Dashboard";
 import EMPDashboard from "../Page/Dashboard/EMPDashboard";
 import HRDashboard from "../Page/Dashboard/HRDashboard";
 import PrivateRoute from "../Private/PrivateRoute";
+import UserPage from "../Components/Chart/xmpl";
+
+
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
         element: <ContuctUs></ContuctUs>,
       },
       {
+        path: "/chart/:id",
+        element: <UserPage></UserPage>,
+      },
+      {
         path: "/Dashboard",
         element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       },
@@ -33,6 +40,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/EMPDashboard",
+        element: <PrivateRoute><EMPDashboard></EMPDashboard></PrivateRoute> ,
+      },
+      {
+        path: "/workSheet",
         element: <PrivateRoute><EMPDashboard></EMPDashboard></PrivateRoute> ,
       },
       {

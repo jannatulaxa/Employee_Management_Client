@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
 
       if (currentUser) {
-        axiosPublic.post("/jwt", { sendingUser }).then((res) => {console.log(res)});
+        axiosPublic.post("/jwt", { sendingUser }).then(() => {});
       }
       if (currentUser === null) {
         axiosPublic.post("/logout", { sendingUser }).then(() => {});

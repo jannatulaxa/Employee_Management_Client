@@ -8,4 +8,5 @@ const HelmateTittle = ({helmetTittle}) => {
     );
 };
 
+
 export default HelmateTittle;

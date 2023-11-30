@@ -24,6 +24,7 @@ import VerifiedRoundedIcon from "@mui/icons-material/VerifiedRounded";
 import useAuthProvider from "../../Components/Hooks/useAuthProvider/useAuthProvider";
 import useAxiousPublic from "../../Components/Hooks/useAxiousPublic/useAxiousPublic";
 import { useForm } from "react-hook-form";
+import Payment from "../../Components/Payments/Payments";
 
 const MyPosts = () => {
   const [page, setPage] = useState(0);
@@ -261,6 +262,7 @@ const MyPosts = () => {
 
   return (
     <div>
+      <Payment></Payment>
       <Box sx={{ width: "100%", mt: 10, backgroundColor: "white" }}>
         {/* <HeaderTittle heading={"My Posts"} tittle={"Posts"}></HeaderTittle> */}
         <Paper sx={{ width: "100%", mb: 2, pl: 2, pr: 2, pt: 5 }}>
@@ -380,7 +382,7 @@ const MyPosts = () => {
                           </Tooltip>
                         </TableCell>
                         <TableCell align="right" sx={{ textAlign: "center" }}>
-                          dummy Text
+                          <Link to={`/chart/${row?._id}`}><button>Details</button></Link>
                         </TableCell>
                       </TableRow>
                     </>

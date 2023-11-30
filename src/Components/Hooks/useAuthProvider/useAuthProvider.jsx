@@ -8,5 +8,4 @@ const useAuthProvider = () => {
 };
 
 
-
 export default useAuthProvider;

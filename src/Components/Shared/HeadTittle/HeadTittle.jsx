@@ -10,4 +10,5 @@ const HeadTittle = ({ tittle, heading }) => {
   );
 };
 
+
 export default HeadTittle;
