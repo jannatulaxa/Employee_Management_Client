@@ -8,6 +8,6 @@ const useAxiousPublic = () => {
   return axiosPublic;
 };
 
-// https://employe-management-nine.vercel.app
+
 
 export default useAxiousPublic;
