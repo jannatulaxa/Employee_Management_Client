@@ -226,7 +226,6 @@ const MyPosts = () => {
   }
 
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
     subtitle.style.color = "#f00";
   }
 
@@ -234,37 +233,11 @@ const MyPosts = () => {
     setIsOpen(false);
   }
 
-  // const handleFire = (post) => {
-  //   Swal.fire({
-  //     title: "Are you sure?",
-  //     text: "You won't be able to revert this!",
-  //     icon: "warning",
-  //     showCancelButton: true,
-  //     confirmButtonColor: "#3085d6",
-  //     cancelButtonColor: "#d33",
-  //     confirmButtonText: "Make him verify!",
-  //   }).then(async (result) => {
-  //     console.log(result);
-  //     // if (result.isConfirmed) {
-  //     //   const res = await axiosPublic.delete(/deletePost/${post._id});
-
-  //     //   if (res.data.deletedCount > 0) {
-  //     //     refetch();
-  //     //     Swal.fire({
-  //     //       title: "Deleted!",
-  //     //       text: "Your Item has been deleted.",
-  //     //       icon: "success",
-  //     //     });
-  //     //   }
-  //     // }
-  //   });
-  // };
-
   return (
     <div>
       
       <Box sx={{ width: "100%", mt: 10, backgroundColor: "white" }}>
-        {/* <HeaderTittle heading={"My Posts"} tittle={"Posts"}></HeaderTittle> */}
+   
         <Paper sx={{ width: "100%", mb: 2, pl: 2, pr: 2, pt: 5 }}>
           <TableContainer sx={{ height: "calc(90vh - 200px)" }}>
             <Table
