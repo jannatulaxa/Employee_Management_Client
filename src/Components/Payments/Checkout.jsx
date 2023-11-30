@@ -53,6 +53,7 @@ const CheckoutForm = () => {
     );
 
     if (paymentIntent) {
+        console.log(paymentIntent)
       if (paymentIntent.status === "succeeded") {
         Swal.fire({
           title: "Update!",

@@ -262,7 +262,7 @@ const MyPosts = () => {
 
   return (
     <div>
-      <Payment></Payment>
+      
       <Box sx={{ width: "100%", mt: 10, backgroundColor: "white" }}>
         {/* <HeaderTittle heading={"My Posts"} tittle={"Posts"}></HeaderTittle> */}
         <Paper sx={{ width: "100%", mb: 2, pl: 2, pr: 2, pt: 5 }}>
@@ -291,10 +291,10 @@ const MyPosts = () => {
                   isOpen={modalIsOpen}
                   onAfterOpen={afterOpenModal}
                   onRequestClose={closeModal}
-                  className="h-72 mx-6 p-10 md:w-[40rem] md:mx-auto bg-[#292727] mt-[10rem]"
+                  className=" mx-6 p-10 md:w-[40rem] md:mx-auto bg-[#292727] "
                   contentLabel="Example Modal"
                 >
-                  <div className="flex text-white justify-end w-4 ml-auto ">
+                  <div className="flex text-white justify-end w-4 ml-auto mt-20">
                     <button onClick={closeModal} className="btn btn-ghost ">X</button>
                   </div>
                   <h2 className="-mt-10"><span className="text-lg font-bold">Name:</span> {dataRow?.name}</h2>
@@ -318,7 +318,8 @@ const MyPosts = () => {
                             This field is required
                           </p>
                         )}
-                    <button className="mt-4 w-full text-center bg-blue-700 py-2 text-white" type="submit">Pay</button>
+                        <Payment></Payment>
+                    {/* <button className="mt-4 w-full text-center bg-blue-700 py-2 text-white" type="submit">Pay</button> */}
                   </form>
                 </Modal>
               </div>
