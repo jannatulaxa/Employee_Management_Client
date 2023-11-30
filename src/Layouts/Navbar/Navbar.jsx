@@ -34,6 +34,7 @@ function ResponsiveAppBar() {
   // Authentic Rout Setup
   const { data: UserRole = [], refetch } = useQuery({
     queryKey: ["UserRole",user],
+    enabled:!!user,
     queryFn: async () => {
       const res = await axiosPublic.get(`/users?email=${user?.email}`);
       return res.data;
