@@ -29,24 +29,16 @@ const Dashboard = () => {
   const [dense, setDense] = useState(false);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const axiosPublic = useAxiousPublic();
-  const { user } = useAuthProvider();
-  const [dataRow, setDataRow] = useState("");
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = useState(false);
+
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
 
-  const onSubmit = async (data, e) => {
-    console.log(data);
-  };
+ 
+
+
 
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(parseInt(event.target.value, 5));
@@ -101,6 +93,7 @@ const Dashboard = () => {
       return res.data;
     },
   });
+
 
   const handleHR = async (row) => {
     const id = row?._id;
