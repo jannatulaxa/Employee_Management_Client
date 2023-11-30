@@ -5,7 +5,7 @@ import useAuthProvider from "../useAuthProvider/useAuthProvider";
 
 
  const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5002',withCredentials: true,
+    baseURL: 'https://employe-management-nine.vercel.app',withCredentials: true,
     
   });
   
