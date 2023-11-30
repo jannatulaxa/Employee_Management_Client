@@ -11,3 +11,6 @@
 5.Communication and Notification System:
 
 Live link: https://management-employee.surge.sh/
+
+Admin email: bb@gmail.com
+Admin password: B2@bbb
